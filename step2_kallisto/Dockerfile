@@ -5,8 +5,8 @@ FROM fredhutch/fredhutch-ubuntu:16.04_20171030
 # aws, curl, git, and unzip are already installed
 # so are python and python3 but no pip*
 
-RUN curl -LO https://bootstrap.pypa.io/get-pip.py
-
+#RUN curl -LO https://bootstrap.pypa.io/get-pip.py
+RUN curl -LO https://bootstrap.pypa.io/pip/3.5/get-pip.py
 RUN python3 get-pip.py
 
 RUN pip3 install boto3 sh
